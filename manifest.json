@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "ADHD Reading Helper",
+  "version": "1.0",
+  "description": "Bold the first few characters of each word to help individuals with ADHD read faster.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
